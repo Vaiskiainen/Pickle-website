@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .typing-effect {
+            border-right: 2px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 2em;
+            width: 0;
+            animation: typing 3s steps(20) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 13ch; } /* Adjust this based on the length of the text */
+        }
+
+        @keyframes blink {
+            from, to { border-color: transparent; }
+            50% { border-color: white; }
+        }
+
+        /* Image styling */
+        .coming-soon-image {
+            margin-top: 20px;
+            max-width: 60%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="typing-effect">Coming Soon</h1>
+        <img src="https://cdn.discordapp.com/attachments/1290992292890673265/1291639382394146836/Screenshot_20240915-114234_FlipaClip.jpg?ex=670571aa&is=6704202a&hm=c4c9dcf84edb0c4104c68acb35996818576514c5ca013040a7e1fe3ef0a3657b&" alt="Coming Soon Image" class="coming-soon-image">
+    </div>
+</body>
+</html>
